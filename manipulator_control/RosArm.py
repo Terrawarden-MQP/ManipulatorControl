@@ -4,8 +4,8 @@ from rclpy.node import Node
 import rclpy.time
 from std_srvs.srv import Empty
 from std_msgs.msg import Float64MultiArray, Bool
-from arm_control.DynamixelArm import DynamixelArm  # Import the DynamixelArm class
-from arm_control.ArmKinematics import ArmKinematics  # Import the ArmKinematics class
+from manipulator_control.DynamixelArm import DynamixelArm  # Import the DynamixelArm class
+from manipulator_control.ArmKinematics import ArmKinematics  # Import the ArmKinematics class
 from geometry_msgs.msg import PoseStamped, Point, PointStamped
 from terrawarden_interfaces.msg import ArmStatus, ArmCommand
 import numpy as np

@@ -7,7 +7,7 @@
 - ROS2 (rclpy)
 
 Internal Dependencies:
-- Terrawarden-MQP/CustomMessages
+- [Terrawarden-MQP/CustomMessages](https://github.com/Terrawarden-MQP/CustomMessages)
 
 ## Node Info
 
@@ -15,9 +15,9 @@ Manipulator Control is a lightweight node for controlling a 3DOF arm using Dynam
 It also contains a setpoint queue for processing multi-step commands, such as pre-written stow + unstow procedures.
 
 ### Trajectory Modes
-- TrajectoryModes.JOINT_SPACE - Joint space quintic trajectory
-- TrajectoryModes.TASK_SPACE - Task space quintic trajectory
-- TrajectoryModes.LIVE_TRACK - Skips quintic trajectory, queues arm motion instantly for live tracking incoming positions
+- `TrajectoryModes.JOINT_SPACE` - Joint space quintic trajectory
+- `TrajectoryModes.TASK_SPACE` - Task space quintic trajectory
+- `TrajectoryModes.LIVE_TRACK` - Skips quintic trajectory, queues arm motion instantly for live tracking incoming positions
 
 ## ROS Info
 
