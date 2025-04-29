@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'terrawarden_mansplain'
+package_name = 'arm_control'
 
 setup(
     name=package_name,
@@ -13,13 +13,13 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='smarkwick',
-    maintainer_email='spmarkwick@wpi.edu',
-    description='Examples of minimal publisher/subscriber using rclpy',
-    license='Apache-2.0',
+    maintainer='Terrawarden Drone Cleanup MQP',
+    maintainer_email='gr-dronecleanup@wpi.edu',
+    description='ROS2 Node for Controlling a 3DOF arm with Dynamixels',
+    license='GPLv3',
     entry_points={
         'console_scripts': [
-        	'arm_node = terrawarden_mansplain.RosArm:main',
+        	'arm_node = arm_control.RosArm:main',
         ],
     },
 )

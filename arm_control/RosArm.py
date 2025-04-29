@@ -4,8 +4,8 @@ from rclpy.node import Node
 import rclpy.time
 from std_srvs.srv import Empty
 from std_msgs.msg import Float64MultiArray, Bool
-from terrawarden_mansplain.DynamixelArm import DynamixelArm  # Import the DynamixelArm class
-from terrawarden_mansplain.ArmKinematics import ArmKinematics  # Import the ArmKinematics class
+from arm_control.DynamixelArm import DynamixelArm  # Import the DynamixelArm class
+from arm_control.ArmKinematics import ArmKinematics  # Import the ArmKinematics class
 from geometry_msgs.msg import PoseStamped, Point, PointStamped
 from terrawarden_interfaces.msg import ArmStatus, ArmCommand
 import numpy as np
@@ -504,15 +504,7 @@ class ArmNode(Node):
 
     def loop(self):
         """
-            I don't want to fully implement this before I get the okay from the team
-            but the idea of this function is to be a primary control loop (instead of the 2? 3? that Sam has)
-            which would control all motions (including stow) all in one place
-            The above function (update_trajectory_position) is a cleaned up version of run_traj_callback.
-            Overall, this node is full of edge cases, sloppy code, and race conditions, and needs help
-            I am happy to take charge and do a lot of this myself, I just don't want to completely overstep
-            Feel free to ask me if you have any questions
-            
-            Thanks - Kay
+            Main loop code to process series of setpoints
         """
         # Runs at 100Hz, because commanding the arm to move faster than that is silly
 
