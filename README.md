@@ -1,7 +1,6 @@
-# ArmControl
+# ManipulatorControl
 
 ### Dependencies
-
 
 - numpy (v1.26)
 - dynamixel_sdk
@@ -12,7 +11,7 @@ Internal Dependencies:
 
 ## Node Info
 
-Arm Control is a lightweight node for controlling a 3DOF arm using Dynamixel actuators with Quintic Trajectories. 
+Manipulator Control is a lightweight node for controlling a 3DOF arm using Dynamixel actuators with Quintic Trajectories. 
 It also contains a setpoint queue for processing multi-step commands, such as pre-written stow + unstow procedures.
 
 ### Trajectory Modes

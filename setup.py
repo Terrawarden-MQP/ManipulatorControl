@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'arm_control'
+package_name = 'manipulator_control'
 
 setup(
     name=package_name,
@@ -19,7 +19,7 @@ setup(
     license='GPLv3',
     entry_points={
         'console_scripts': [
-        	'arm_node = arm_control.RosArm:main',
+        	'arm_node = manipulator_control.RosArm:main',
         ],
     },
 )
